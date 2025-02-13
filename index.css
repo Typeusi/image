@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header{
+    background-color: aqua;
+    padding: 32px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.colum{
+    padding: 10px;
+    width: calc(100/4);
+    background-color:blue;
+}
+
+
+@media screen and (max-width:992px){
+    .colum{
+        width: calc(100% /3);
+       
+    }
+    
+}
+
+
+@media screen and (max-width:768px){
+    .colum{
+        width: calc(100% /2);
+    
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .colum{
+        width:100% ;
+    
+    }
+    
+}
